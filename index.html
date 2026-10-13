@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INS-TEC: formación técnica profesional orientada al futuro laboral. Conoce nuestras carreras y solicita información.">
+  <meta name="theme-color" content="#102a43">
+  <title>INS-TEC | Formación técnica para tu futuro</title>
+
+  <!-- Bootstrap 5: componentes y sistema de grillas -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="encabezado" id="inicio">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand marca" href="#inicio" aria-label="INS-TEC, ir al inicio">
+          <span class="marca-icono" aria-hidden="true">IT</span>
+          <span><strong>INS-TEC</strong><small>Instituto de formación técnica</small></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Abrir o cerrar el menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#carreras">Carreras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-acento btn-sm px-3" href="#registro">Solicitar información</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero seccion" aria-labelledby="titulo-principal">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="etiqueta-superior"><span aria-hidden="true">●</span> FORMACIÓN QUE ABRE CAMINOS</p>
+            <h1 id="titulo-principal">Convierte tu talento en tu <span>futuro profesional.</span></h1>
+            <p class="hero-texto">Desarrolla habilidades prácticas, aprende con propósito y prepárate para los desafíos del mundo laboral.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <a class="btn btn-acento btn-lg" href="#carreras">Explorar carreras <span aria-hidden="true">→</span></a>
+              <a class="btn btn-outline-light btn-lg" href="#registro">Quiero información</a>
+            </div>
+            <div class="hero-nota mt-4"><span aria-hidden="true">✓</span> Orientación académica para ayudarte a elegir.</div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1100&q=85"
+                alt="Estudiantes colaborando en una actividad académica" class="hero-imagen">
+              <div class="tarjeta-flotante">
+                <span class="tarjeta-flotante-icono" aria-hidden="true">✦</span>
+                <div><strong>Aprende haciendo</strong><small>Conecta conocimientos y práctica</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja-datos" aria-label="Características de nuestra propuesta educativa">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-12 col-md-4"><p><strong>Aprendizaje práctico</strong><span>Enfoque en habilidades aplicables</span></p></div>
+          <div class="col-12 col-md-4"><p><strong>Opciones académicas</strong><span>Explora distintas áreas profesionales</span></p></div>
+          <div class="col-12 col-md-4"><p><strong>Orientación al postulante</strong><span>Resuelve tus dudas antes de elegir</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-carreras" id="carreras" aria-labelledby="titulo-carreras">
+      <div class="container">
+        <div class="encabezado-seccion">
+          <p class="etiqueta-superior">DESCUBRE TU CAMINO</p>
+          <h2 id="titulo-carreras">Encuentra tu próxima carrera</h2>
+          <p>Conoce nuestras áreas de formación y elige la que mejor se alinee con tus intereses.</p>
+        </div>
+
+        <div class="grid-carreras">
+          <article class="card tarjeta-carrera h-100">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top" alt="Equipo colaborando en computadoras">
+            <div class="card-body d-flex flex-column">
+              <span class="carrera-categoria">TECNOLOGÍA</span>
+              <h3 class="card-title">Desarrollo de Software</h3>
+              <p class="card-text">Aprende fundamentos de programación y creación de aplicaciones web y móviles.</p>
+              <div class="carrera-detalle"><span>Duración referencial</span><strong>3 años</strong></div>
+              <button type="button" class="btn btn-enlace mt-3 elegir-carrera" data-carrera="software">Me interesa esta carrera <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="card tarjeta-carrera h-100">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top" alt="Documentos y calculadora sobre una mesa">
+            <div class="card-body d-flex flex-column">
+              <span class="carrera-categoria">GESTIÓN FINANCIERA</span>
+              <h3 class="card-title">Contabilidad y Finanzas</h3>
+              <p class="card-text">Conoce procesos contables, análisis financiero y organización tributaria.</p>
+              <div class="carrera-detalle"><span>Duración referencial</span><strong>2 años y medio</strong></div>
+              <button type="button" class="btn btn-enlace mt-3 elegir-carrera" data-carrera="contabilidad">Me interesa esta carrera <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+
+          <article class="card tarjeta-carrera h-100">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top" alt="Profesionales reunidos para planificar un proyecto">
+            <div class="card-body d-flex flex-column">
+              <span class="carrera-categoria">NEGOCIOS</span>
+              <h3 class="card-title">Administración de Empresas</h3>
+              <p class="card-text">Desarrolla habilidades de organización, gestión de recursos y liderazgo.</p>
+              <div class="carrera-detalle"><span>Duración referencial</span><strong>3 años</strong></div>
+              <button type="button" class="btn btn-enlace mt-3 elegir-carrera" data-carrera="administracion">Me interesa esta carrera <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="nota-academica">Nota: las carreras y duraciones son referenciales para este proyecto académico ficticio.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion-nosotros" id="nosotros" aria-labelledby="titulo-nosotros">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="imagen-secundaria">
+              <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=85"
+                alt="Estudiantes participando en una actividad de aprendizaje">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="etiqueta-superior">SOBRE INS-TEC</p>
+            <h2 id="titulo-nosotros">Una formación pensada para avanzar</h2>
+            <p class="texto-nosotros">Nuestra propuesta busca acercar la formación técnica a las metas personales y profesionales de cada estudiante. Explora las opciones disponibles y solicita orientación para tomar una decisión informada.</p>
+            <ul class="lista-beneficios">
+              <li><span aria-hidden="true">✓</span><div><strong>Aprendizaje orientado a la práctica</strong><p>Relaciona los conceptos con situaciones y proyectos.</p></div></li>
+              <li><span aria-hidden="true">✓</span><div><strong>Información organizada</strong><p>Encuentra las opciones académicas en un solo lugar.</p></div></li>
+              <li><span aria-hidden="true">✓</span><div><strong>Contacto sencillo</strong><p>Envía tus datos para solicitar información de una carrera.</p></div></li>
+            </ul>
+            <a class="btn btn-oscuro mt-2" href="#registro">Solicitar orientación</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-registro" id="registro" aria-labelledby="titulo-registro">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8">
+            <div class="formulario-contenedor">
+              <div class="encabezado-seccion">
+                <p class="etiqueta-superior">DA EL PRIMER PASO</p>
+                <h2 id="titulo-registro">Solicita información</h2>
+                <p>Completa el formulario. Los campos marcados con * son obligatorios.</p>
+              </div>
+
+              <form id="formPostulacion" class="formulario-estilo" method="post" action="#" novalidate>
+                <fieldset class="grupo-formulario">
+                  <legend>1. Datos personales</legend>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="nombre" class="form-label">Nombres y apellidos *</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" minlength="5" maxlength="100" required aria-describedby="nombreAyuda nombreError">
+                      <div class="form-text" id="nombreAyuda">Escribe tu nombre completo.</div>
+                      <div class="invalid-feedback" id="nombreError"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="dni" class="form-label">DNI *</label>
+                      <input type="text" class="form-control" id="dni" name="dni" inputmode="numeric" autocomplete="off" pattern="[0-9]{8}" maxlength="8" required aria-describedby="dniError">
+                      <div class="invalid-feedback" id="dniError"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="celular" class="form-label">Celular *</label>
+                      <input type="tel" class="form-control" id="celular" name="celular" inputmode="numeric" autocomplete="tel" pattern="9[0-9]{8}" maxlength="9" required aria-describedby="celularError">
+                      <div class="invalid-feedback" id="celularError"></div>
+                    </div>
+                    <div class="col-12">
+                      <label for="correo" class="form-label">Correo electrónico *</label>
+                      <input type="email" class="form-control" id="correo" name="correo" autocomplete="email" maxlength="120" required aria-describedby="correoError">
+                      <div class="invalid-feedback" id="correoError"></div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="grupo-formulario">
+                  <legend>2. Interés académico</legend>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="carrera" class="form-label">Carrera de interés *</label>
+                      <select id="carrera" name="carrera" class="form-select" required aria-describedby="carreraError">
+                        <option value="">Selecciona una carrera</option>
+                        <option value="software">Desarrollo de Software</option>
+                        <option value="contabilidad">Contabilidad y Finanzas</option>
+                        <option value="administracion">Administración de Empresas</option>
+                        <option value="otro">Otra / Por definir</option>
+                      </select>
+                      <div class="invalid-feedback" id="carreraError"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="modalidad" class="form-label">Modalidad preferida *</label>
+                      <select id="modalidad" name="modalidad" class="form-select" required>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="form-label d-block">Turnos disponibles *</span>
+                      <div class="d-flex flex-wrap gap-3" id="grupoTurnos" aria-describedby="turnoError">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="manana" name="turnos" value="Mañana"><label class="form-check-label" for="manana">Mañana</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="tarde" name="turnos" value="Tarde"><label class="form-check-label" for="tarde">Tarde</label></div>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="noche" name="turnos" value="Noche"><label class="form-check-label" for="noche">Noche</label></div>
+                      </div>
+                      <div class="mensaje-validacion" id="turnoError" role="alert"></div>
+                    </div>
+                    <div class="col-12">
+                      <label for="mensaje" class="form-label">Comentarios o dudas <span class="texto-opcional">(opcional)</span></label>
+                      <textarea id="mensaje" name="mensaje" class="form-control" rows="4" maxlength="500" placeholder="Escribe aquí tu consulta..."></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="form-check consentimiento">
+                  <input type="checkbox" class="form-check-input" id="acepto" name="acepto" required aria-describedby="aceptoError">
+                  <label class="form-check-label" for="acepto">Acepto que mis datos se utilicen para responder a mi solicitud de información. *</label>
+                  <div class="mensaje-validacion" id="aceptoError" role="alert"></div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                  <button type="submit" class="btn btn-acento btn-lg" id="btnEnviar">Enviar solicitud <span aria-hidden="true">→</span></button>
+                  <button type="reset" class="btn btn-outline-secondary btn-lg" id="btnLimpiar">Limpiar formulario</button>
+                </div>
+
+                <div id="areaMensajes" class="mt-4" aria-live="polite" aria-atomic="true"></div>
+                <p class="aviso-demo mt-3 mb-0">Demostración académica: este formulario simula el envío y no almacena datos en un servidor.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <a class="marca marca-pie" href="#inicio"><span class="marca-icono" aria-hidden="true">IT</span><span><strong>INS-TEC</strong><small>Formamos profesionales con futuro</small></span></a>
+          <p class="pie-descripcion">Información académica clara para ayudarte a dar el siguiente paso.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2 class="pie-titulo">Explora</h2>
+          <ul class="pie-enlaces"><li><a href="#carreras">Carreras</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#registro">Solicitar información</a></li></ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2 class="pie-titulo">Contacto referencial</h2>
+          <p class="pie-contacto">Lima, Perú<br>Teléfono: (01) 123-4567<br>Correo: informes@ins-tec.example</p>
+        </div>
+      </div>
+      <div class="pie-final"><p>© <span id="anioActual">2026</span> INS-TEC. Proyecto académico.</p><a href="#inicio">Volver arriba ↑</a></div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: menú adaptable -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
